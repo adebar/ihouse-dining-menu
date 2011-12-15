@@ -1,8 +1,8 @@
 #!/bin/sh
 
-#http://residents.ihouse-nyc.org/s/733/images/editor_documents/menu/weekly_menu_september_19__2011.pdf
+#http://residents.ihouse-nyc.org/s/733/images/editor_documents/menu/weekly_menu_december_12_2011.pdf
 
-monday=`date -v-mon "+%B_%-e__%Y"`
+monday=`date -v-mon "+%B_%-e_%Y"`
 monday=`echo $monday | tr '[A-Z]' '[a-z]'`
 
 url="http://residents.ihouse-nyc.org/s/733/images/editor_documents/menu/weekly_menu_${monday}.pdf"
