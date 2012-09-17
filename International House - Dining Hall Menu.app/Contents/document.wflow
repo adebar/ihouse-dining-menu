@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>330</string>
+	<string>346</string>
 	<key>AMApplicationVersion</key>
-	<string>2.2.1</string>
+	<string>2.3</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>2.0.2</string>
+				<string>2.0.3</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Automator</string>
@@ -61,12 +61,13 @@
 					<key>COMMAND_STRING</key>
 					<string>#!/bin/sh
 
+#http://residents.ihouse-nyc.org/s/733/images/editor_documents/menus/week_of_september_17_2012.pdf
 #http://residents.ihouse-nyc.org/s/733/images/editor_documents/menu/weekly_menu_december_12_2011.pdf
 
 monday=`date -v-mon "+%B_%-e_%Y"`
 monday=`echo $monday | tr '[A-Z]' '[a-z]'`
 
-url="http://residents.ihouse-nyc.org/s/733/images/editor_documents/menu/weekly_menu_${monday}.pdf"
+url="http://residents.ihouse-nyc.org/s/733/images/editor_documents/menus/week_of_${monday}.pdf"
 
 echo $url
 
@@ -89,7 +90,7 @@ rm -f menu.pdf</string>
 				<key>BundleIdentifier</key>
 				<string>com.apple.RunShellScript</string>
 				<key>CFBundleVersion</key>
-				<string>2.0.2</string>
+				<string>2.0.3</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
